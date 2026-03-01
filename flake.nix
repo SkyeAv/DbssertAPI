@@ -1,5 +1,5 @@
 {
-  description = "backend placeholder (1.0.0)";
+  description = "dbssert-api (1.0.0)";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     systems.url = "github:nix-systems/default";
