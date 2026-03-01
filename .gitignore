@@ -1,0 +1,17 @@
+*.egg-info
+*__pycache__/
+*.logs/
+*.opencode/
+*.sisyphus/
+*.ruff_cache/
+*plans/
+*DATALAKE/
+*onnx/
+*venv/
+*.log
+*.duckdb
+*.wal
+*.sh
+*result/
+*result
+*.envrc

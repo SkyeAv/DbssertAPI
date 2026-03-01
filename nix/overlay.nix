@@ -13,6 +13,7 @@ final: prev: {
         propagatedBuildInputs = (with pyFinal; [
           fastapi
           uvicorn
+          polars
           duckdb
         ]);
         doCheck = false;

@@ -6,10 +6,11 @@ in {
   devShells.default = pkgs.mkShell {
     packages = (with py; [
       dbssert-api
-      duckdb
       python
       flake8
       pip
+    ]) ++ (with pkgs; [
+      duckdb
     ]);
   };
 }
