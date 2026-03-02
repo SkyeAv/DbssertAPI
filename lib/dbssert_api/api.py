@@ -46,8 +46,8 @@ def get_cannoical_curie_information(curie: str) -> list[dict[str, Any]]:
     return df.to_dicts()
 
 @APP.get("/health")
-def health() -> dict[str, str]:
-  return {"ok": "ok"}
+def health() -> str:
+  return "ok"
 
 def serve_api() -> None:
   app: Any = APP
