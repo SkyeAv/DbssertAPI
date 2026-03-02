@@ -45,6 +45,10 @@ def get_cannoical_curie_information(curie: str) -> list[dict[str, Any]]:
     df: pl.DataFrame = conn.sql(sql).pl()
     return df.to_dicts()
 
+@APP.get("/health")
+def health() -> dict[str, str]:
+  return {"ok": "ok"}
+
 def serve_api() -> None:
   app: Any = APP
   uvicorn.run(app, host="0.0.0.0", port=8052)
